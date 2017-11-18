@@ -1,0 +1,309 @@
+        /* General Styles - Start */
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        /* H Style span       */
+        
+        .navbar-default {
+            font-family: 'Coustard', serif;
+            margin-bottom: 0px;
+            background: #281e1c;
+            color: goldenrod;
+            top: 0;
+            border-color: transparent;
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: darkgoldenrod;
+        }
+        /*header style background img h1,btn position*/
+        
+        header {
+            position: relative;
+            background-image: url(../img/bed-2588236_1280.jpg);
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-position: bottom center;
+        }
+        
+        header h1 {
+            font-family: 'Coustard', serif;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: goldenrod;
+            text-shadow: 1px 1px #fff;
+            text-align: center;
+        }
+        
+        header h1::after {
+            content: "";
+            display: block;
+            border: 1px solid goldenrod;
+        }
+        
+        header .btn {
+            font-family: 'Coustard', serif;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border-radius: 20px;
+            border-color: goldenrod;
+        }
+        /*section About style*/
+        
+        section {
+            color: darkgoldenrod;
+            background: #281e1c;
+            width: 100%;
+        }
+        
+        section h2 {
+            font-family: 'Coustard', serif;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        section figure {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        section figure img {
+            width: 100%;
+            border: 3px inset  goldenrod;
+        }
+        
+        .col-md-6 {
+            padding: 5px;
+        }
+        
+        section .col-md-6 p {
+            font-size: 16px;
+            padding: 5px;
+        }
+        
+        section .col-md-12 {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        section .col-md-12 .fa {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background: black;
+            line-height: 50px;
+            border-radius: 50%;
+        }
+        /*section gallery*/
+        
+        #gallery img {
+            position: relative;
+             border: 3px inset  goldenrod;
+        }
+        
+       
+        
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 11;
+            background: rgba(0, 0, 0, 0.9);
+            opacity: 0;
+            transition: 0.3s linear;
+        }
+        
+        .mask:hover {
+            opacity: 0.9;
+            border: 1px solid gold;
+        }
+        /*modal*/
+        
+  
+
+
+section .col-md-4 {
+    text-align: center;
+    padding: 5px;
+}
+
+section .col-md-4 img{
+    border-radius:0px;
+    transition: 0.3s;
+    margin-bottom: 50px;
+    border: 3px solid  goldenrod;
+}
+
+section .col-md-4 img:hover{
+    opacity: 0.7;
+}
+        #myImg {
+           
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        #myImg:hover {
+            opacity: 0.7;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: visible;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+        /* Modal Content (image) */
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        /* Caption of Modal Image */
+        
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+        /* Add Animation */
+        
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+        
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+        /* The Close Button */
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 100% Image Width on Smaller Screens */
+        
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+/*footer style and form*/
+footer{
+    color: darkgoldenrod;
+            background: #281e1c;
+            width: 100%;
+    text-align: center;
+}
+
+footer h2{
+    text-align: center;
+}
+
+footer form{width: 100%;
+    text-align: center;
+}
+
+footer input[type="text"],input[type="email"],input[type="submit"],textarea{
+    width: 300px;
+    height: 35px;
+    color:gold;
+    border-radius:10px;
+    display:block;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid  goldenrod;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer textarea{
+    height: 100px;
+    overflow: hidden;
+}
+
+footer address{
+    padding: 30px;
+}
+
+footer address .fa{
+   margin: 30px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    line-height: 50px;
+    border-radius:50%;
+    
+}
