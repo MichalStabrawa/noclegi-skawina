@@ -102,6 +102,7 @@ $('#btnScroll').on('click', function () {
 
 function modalTest(){
     var modalContact = document.getElementById('modal-test').style.display="block";
+  
     
 }
 

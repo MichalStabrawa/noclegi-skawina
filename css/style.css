@@ -4,14 +4,18 @@
             margin: 0px;
             padding: 0px;
         }
-
         
-        body {position: relative;
+        body {
+            position: relative;
             margin: 0;
             padding: 0;
             font-family: 'Lato', sans-serif;
         }
-
+        
+        h2,
+        h3 {
+            font-family: 'Coustard', serif;
+        }
         /* H Style span       */
         
         .navbar-default {
@@ -66,29 +70,27 @@
             border-color: goldenrod;
             transition: 0.3s linear;
         }
-
-header .btn:hover{
-    background: goldenrod;
-    color:#fff;
-    border:none;
-}
-
-header #btnScroll{
-     position: absolute;
-    width: 50px;
-    height: 50px;
-    top:65%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    line-height: 50px;
-    z-index:10;
-    text-align: center;
-    color:#fff;
-    border:1px solid goldenrod;
-    border-radius: 50%;
-}
-
-
+        
+        header .btn:hover {
+            background: goldenrod;
+            color: #fff;
+            border: none;
+        }
+        
+        header #btnScroll {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 50px;
+            z-index: 10;
+            text-align: center;
+            color: #fff;
+            border: 1px solid goldenrod;
+            border-radius: 50%;
+        }
         /*section About style-------------------------------------------------------------------------------------------*/
         
         section {
@@ -157,7 +159,7 @@ header #btnScroll{
         
         .mask:hover {
             opacity: 0.8;
-            color:#fff;
+            color: #fff;
         }
         /*modal*/
         
@@ -281,21 +283,16 @@ header #btnScroll{
                 width: 100%;
             }
         }
-
-
-
-/*section town -background img background-attachment*/
-
-#town{
-    background-image: url(../img/skawina.jpg);
-    width: 100%;
-    height: 400px;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size:cover;
-    
-}
-
+        /*section town -background img background-attachment*/
+        
+        #town {
+            background-image: url(../img/skawina.jpg);
+            width: 100%;
+            height: 400px;
+            background-position: top center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
         /*footer style and form*/
         
         footer {
@@ -335,8 +332,6 @@ header #btnScroll{
             height: 80px;
             overflow: hidden;
         }
-
-
         
         footer address {
             font-size: 20px;
@@ -359,64 +354,60 @@ header #btnScroll{
             background: #fff;
         }
         
-        footer  a {
-            
+        footer a {
             color: goldenrod;
             transition: 0.3s linear;
         }
-
-footer a:hover{
-    text-decoration: none;
-    color:darkgoldenrod;
-    
-}
-
-/*modal section modal-test*/
-
-#modal-test{text-align: center;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index:100;
-    top:0;
-    left:0;
-     background: rgba(0, 0, 0, 0.9);
-    display:none;
-    
-}
-
-#modal-test a{
-    color:goldenrod;
-    text-align: center;
-}
-
-#modal-test a:hover{
-    text-decoration: none;
-}
-
-#modal-test form textarea{
-    height: 80px;
+        
+        footer a:hover {
+            text-decoration: none;
+            color: darkgoldenrod;
+        }
+        /*modal section modal-test*/
+        
+        #modal-test {
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+        }
+        
+        #modal-test a {
+            color: goldenrod;
+            text-align: center;
+        }
+        
+        #modal-test a:hover {
+            text-decoration: none;
+        }
+        
+        #modal-test form textarea {
+            height: 80px;
             overflow: hidden;
-}
-
-input[type="submit"]:hover{
-    background: gold;
-    transition: 0.3s linear;
-    color:#fff;
-}
-
-#btnClose{
-    position: absolute;
-    z-index:100;
-    right: 5%;
-    top:5%;
-    background: transparent;
-    border:0px;
-}
-
-
-/*myBtnTop ********style******/
- #myBtnTop {
+        }
+        
+        input[type="submit"]:hover {
+            background: gold;
+            transition: 0.3s linear;
+            color: #fff;
+        }
+        
+        #btnClose {
+            position: absolute;
+            z-index: 100;
+            right: 5%;
+            top: 5%;
+            background: transparent;
+            border: 0px;
+        }
+        /*myBtnTop ********style******/
+        
+        #myBtnTop {
             display: none;
             position: fixed;
             bottom: 20px;
@@ -432,3 +423,97 @@ input[type="submit"]:hover{
             opacity: 0.8;
         }
 
+/*social media style******************************************************************************************************/
+#social-media .col-md-12{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    text-align: center;
+}
+
+#social-media .col-md-12::before{margin:5px;
+    content:"Polub Nas";
+    display:block;
+    border-top: 2px solid  #281e1c;
+}
+
+#social-media .col-md-12::after{
+    margin:5px;
+    content:"";
+    display:block;
+    border-top: 2px solid  #281e1c;
+}
+
+
+#social-media .fa{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#social-media .fa-facebook{
+    background: #161E6B;
+    border-radius: 50%;
+    color:#fff;
+    transition: 0.3s linear;
+}
+
+#social-media .fa-facebook:hover{
+    color:#281e1c;
+    background: goldenrod;
+    
+}
+
+
+/*google maps style******************************************************************************************/
+        
+        footer .container-fluid .col-md-12 {
+            position: relative;
+            padding: 0px;
+            background-image: linear-gradient( rgba(40, 30, 28, 0.7), rgba(40, 30, 28, 0.6)), url(../img/tanie-noclegi-skawina-dojazd.png);
+            width: 100%;
+            height: 411px;
+            background-size: cover;
+            background-position: center;
+            border-top: 20px solid #281e1c;
+            border-bottom: 20px solid #281e1c;
+        }
+        
+
+
+        .maskMap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #281e1c;
+            opacity: 0;
+            -webkit-transition: ;
+            -o-transition: ;
+            transition: 0.3s linear;
+            z-index: 5;
+        }
+        
+        .maskMap:hover {
+            opacity: 0.8;
+        }
+        
+        .maskMap a {
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: ;
+            -ms-transform: ;
+            -o-transform: ;
+            transform: translate(-50%;
+            -50%);
+            -webkit-transition: ;
+            -o-transition: ;
+            transition: 0.3s linear;
+        }
+        
+        .maskMap a:hover {
+            color: #fff;
+        }
