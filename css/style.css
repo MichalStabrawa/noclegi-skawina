@@ -4,12 +4,14 @@
             margin: 0px;
             padding: 0px;
         }
+
         
         body {
             margin: 0;
             padding: 0;
             font-family: 'Lato', sans-serif;
         }
+
         /* H Style span       */
         
         .navbar-default {
@@ -53,6 +55,7 @@
         }
         
         header .btn {
+            width: 200px;
             font-family: 'Coustard', serif;
             position: absolute;
             top: 40%;
@@ -84,7 +87,7 @@
         
         section figure img {
             width: 100%;
-            border: 3px inset  goldenrod;
+            border: 3px inset goldenrod;
         }
         
         .col-md-6 {
@@ -113,10 +116,8 @@
         
         #gallery img {
             position: relative;
-             border: 3px inset  goldenrod;
+            border: 3px inset goldenrod;
         }
-        
-       
         
         .mask {
             width: 100%;
@@ -131,31 +132,28 @@
         }
         
         .mask:hover {
-            opacity: 0.9;
-            border: 1px solid gold;
+            opacity: 0.8;
+            color:#fff;
         }
         /*modal*/
         
-  
-
-
-section .col-md-4 {
-    text-align: center;
-    padding: 5px;
-}
-
-section .col-md-4 img{
-    border-radius:0px;
-    transition: 0.3s;
-    margin-bottom: 50px;
-    border: 3px solid  goldenrod;
-}
-
-section .col-md-4 img:hover{
-    opacity: 0.7;
-}
+        section .col-md-4 {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        section .col-md-4 img {
+            border-radius: 0px;
+            transition: 0.3s;
+            margin-bottom: 50px;
+            border: 3px solid goldenrod;
+        }
+        
+        section .col-md-4 img:hover {
+            opacity: 0.7;
+        }
+        
         #myImg {
-           
             cursor: pointer;
             transition: 0.3s;
         }
@@ -259,51 +257,94 @@ section .col-md-4 img:hover{
                 width: 100%;
             }
         }
-/*footer style and form*/
-footer{
-    color: darkgoldenrod;
-            background: #281e1c;
-            width: 100%;
-    text-align: center;
-}
 
-footer h2{
-    text-align: center;
-}
 
-footer form{width: 100%;
-    text-align: center;
-}
 
-footer input[type="text"],input[type="email"],input[type="submit"],textarea{
-    width: 300px;
-    height: 35px;
-    color:gold;
-    border-radius:10px;
-    display:block;
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid  goldenrod;
-    background-color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*section town*/
 
-footer textarea{
-    height: 100px;
-    overflow: hidden;
-}
-
-footer address{
-    padding: 30px;
-}
-
-footer address .fa{
-   margin: 30px;
-    width: 50px;
-    height: 50px;
-    background: black;
-    line-height: 50px;
-    border-radius:50%;
+#town{
+    background-image: url(../img/skawina.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    background-attachment: fixed;
     
+}
+
+        /*footer style and form*/
+        
+        footer {
+            color: darkgoldenrod;
+            background: #fff;
+            width: 100%;
+            text-align: center;
+        }
+        
+        footer h2 {
+            text-align: center;
+        }
+        
+        footer form {
+            width: 100%;
+            text-align: center;
+        }
+        
+        footer input[type="text"],
+        input[type="email"],
+        input[type="submit"],
+        textarea {
+            width: 300px;
+            height: 35px;
+            color: gold;
+            border-radius: 10px;
+            display: block;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid goldenrod;
+            background-color: transparent;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        footer textarea {
+            height: 80px;
+            overflow: hidden;
+        }
+        
+        footer address {
+            font-size: 20px;
+            padding: 30px;
+        }
+        
+        footer address .fa {
+            margin: 30px;
+            width: 50px;
+            height: 50px;
+            background: black;
+            line-height: 50px;
+            border-radius: 50%;
+            transition: 0.3s linear;
+            color: #fff;
+        }
+        
+        footer address .fa:hover {
+            color: darkgoldenrod;
+            background: #fff;
+        }
+        
+        footer  a {
+            
+            color: goldenrod;
+            transition: 0.3s linear;
+        }
+
+footer a:hover{
+    text-decoration: none;
+    color:darkgoldenrod;
+    
+}
+
+#map{
+    width: 100%;
+    height: 400px;
 }
