@@ -89,3 +89,51 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+
+/*scroll top button to section noclegi*/
+$('#btnScroll').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $('#noclegi').offset().top
+    }, 1000);
+});
+
+
+/*Modal modal-test function*/
+
+function modalTest(){
+    var modalContact = document.getElementById('modal-test').style.display="block";
+    
+}
+
+document.getElementById('myBtn').addEventListener('click',modalTest);
+
+
+//modal-test close function
+
+function modalTestClose(){
+    document.getElementById('modal-test').style.display="none";
+}
+
+document.getElementById('btnClose').addEventListener('click',modalTestClose);
+
+
+
+/*myBtn scrollTop*/
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtnTop").style.display = "block";
+    } else {
+        document.getElementById("myBtnTop").style.display = "none";
+    }
+}
+
+
+/*scroll top button to section noclegi*/
+$('#myBtnTop').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $('#main-nav').offset().top
+    }, 1000);
+});
