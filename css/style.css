@@ -286,7 +286,7 @@
         /*section town -background img background-attachment*/
         
         #town {
-            background-image: url(../img/skawina.jpg);
+            background-image: url(../img/skawina-tanie-pokoje-noclegi-krak%C3%B3w.jpg);
             width: 100%;
             height: 400px;
             background-position: top center;
@@ -363,7 +363,7 @@
             text-decoration: none;
             color: darkgoldenrod;
         }
-        /*modal section modal-test*/
+        /*modal section modal-test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
         
         #modal-test {
             text-align: center;
@@ -376,6 +376,8 @@
             background: rgba(0, 0, 0, 0.9);
             display: none;
         }
+
+
         
         #modal-test a {
             color: goldenrod;
@@ -389,6 +391,7 @@
         #modal-test form textarea {
             height: 80px;
             overflow: hidden;
+            color:#fff;
         }
         
         input[type="submit"]:hover {
@@ -422,50 +425,46 @@
             border-radius: 10px;
             opacity: 0.8;
         }
-
-/*social media style******************************************************************************************************/
-#social-media .col-md-12{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    
-    text-align: center;
-}
-
-#social-media .col-md-12::before{margin:5px;
-    content:"Polub Nas";
-    display:block;
-    border-top: 2px solid  #281e1c;
-}
-
-#social-media .col-md-12::after{
-    margin:5px;
-    content:"";
-    display:block;
-    border-top: 2px solid  #281e1c;
-}
-
-
-#social-media .fa{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-}
-
-#social-media .fa-facebook{
-    background: #161E6B;
-    border-radius: 50%;
-    color:#fff;
-    transition: 0.3s linear;
-}
-
-#social-media .fa-facebook:hover{
-    color:#281e1c;
-    background: goldenrod;
-    
-}
-
-
-/*google maps style******************************************************************************************/
+        /*social media style******************************************************************************************************/
+        
+        #social-media .col-md-12 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        #social-media .col-md-12::before {
+            margin: 5px;
+            content: "Polub Nas";
+            display: block;
+            border-top: 2px solid #281e1c;
+        }
+        
+        #social-media .col-md-12::after {
+            margin: 5px;
+            content: "";
+            display: block;
+            border-top: 2px solid #281e1c;
+        }
+        
+        #social-media .fa {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        #social-media .fa-facebook {
+            background: #161E6B;
+            border-radius: 50%;
+            color: #fff;
+            transition: 0.3s linear;
+        }
+        
+        #social-media .fa-facebook:hover {
+            color: #281e1c;
+            background: goldenrod;
+        }
+        /*google maps style******************************************************************************************/
         
         footer .container-fluid .col-md-12 {
             position: relative;
@@ -479,8 +478,6 @@
             border-bottom: 20px solid #281e1c;
         }
         
-
-
         .maskMap {
             position: absolute;
             top: 0;
