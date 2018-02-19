@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
+    <meta name="description" content="Tanie noclegi  Skawina. Pokoje do wynajęcia w Skawinie w pełni wyposażone. Atrakcyjna lokalizacja w bliskim pobliżu Krakowa  ">
+    <meta name="keywords" content="noclegi Skawina, nocleg Skawina,tanie pokoje do wynajęcia w Skawinie, tanie pokoje skawina, nocleg skawina">
 
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
@@ -78,14 +78,14 @@
                 <div class="col-md-6 col-sm-6">
                     <figure><img src="img/skawina-tanie-noclegi.jpg" alt=""></figure>
                     <div class="mask">
-                        <h4>Nolcegi "Pod Lipkami"</h4>
+                        <h4>Nolcegi "Pod Lipkami" Skawina</h4>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <p>Oferujemy pokoje do wynajęcia dla pracowników, przyjezdnych, turystów.</p>
                     <p>Pokoje dwu i trzysosobowe z własną łazienką, telewizorem oraz internetem WI-FI. Do dyspozycji aneks kuchenny w pełni wyposażony, na każdym poziomie.</p>
                     <p>Budynek wyremontowany w sierpniu 2017r.</p>
-                    <p>Bardzo dobra lokalizacja przy głównej drodze krajowej 44, 300m od obwodnicy Skawina i 500m od obwodnicy A4. 10min do Krakowa. Do centrum SKawiny 3min.</p>
+                    <p>Bardzo dobra lokalizacja przy głównej drodze krajowej 44, 300m od obwodnicy Skawina i 500m od obwodnicy A4. 10min do Krakowa. Do centrum Skawiny 3min.</p>
                     <p>Obok przystanek autobusowy i sklepy spożywcze.</p>
                     <p>Do dyspozycji Gości duży parking. Posesja ogrodzona</p>
                 </div>
@@ -127,7 +127,7 @@
 
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img id="myImg2" src="img/pokoje_wynajem_w_skawinie_noclegi.jpg" alt="Pokój " width="300" height="200">
+                    <img id="myImg2" src="img/nocleg_skawina_pok%C3%B3j_do_wynaj%C4%99cia.jpg" alt="Pokój " width="300" height="200">
 
                     <!-- The Modal 2 -->
                     <div id="myModal" class="modal">
@@ -162,7 +162,7 @@
 
                 </div>
                 <div class="col-md-4 col-sm-6 ">
-                    <img id="myImg5" src="img/tanie_noclegi_skawina_%C5%82azienka.jpg" alt="Pokój" width="300" height="200">
+                    <img id="myImg5" src="img/tanie_noclegi_skawina_%C5%82azienka.jpg" alt="Łazienka-noclegi Skawina" width="300" height="200">
 
                     <!-- The Modal 5-->
                     <div id="myModal" class="modal">
@@ -183,6 +183,39 @@
                 </div>
             </div>
 
+               <div class="row">
+                <div class="col-md-4 col-sm-6 ">
+                    <img id="myImg7" src="img/tanie-pokoje-skawina-kuchnia.PNG" alt=" Pokój" width="300" height="200">
+
+                    <!-- The Modal 7-->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img id="myImg8" src="img/tanie-noclegi-skawina.PNG" alt="Pokój " width="300" height="200">
+
+                    <!-- The Modal 8 -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <img id="myImg9" src="img/pokoje-do-wynajecia%20w%20skawinie.JPG" alt="Pokój do wynajęcia skawina" width="300" height="200">
+
+                    <!-- The Modal 9 -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -209,11 +242,11 @@
                    </address>
                 </div>
                 <div class="col-md-6">
-                    <form action="">
-                        <input type="text" placeholder="Imie">
-                        <input type="text" placeholder="Nazwisko">
-                        <input type="email" placeholder="email">
-                        <textarea placeholder="Wiadomość"></textarea>
+                    <form action="/email.php" method="post">
+                        <input type="text" name="firstName" placeholder="Imie">
+                        <input type="text" name="lastName" placeholder="Nazwisko">
+                        <input type="email" name="email" placeholder="email">
+                        <textarea name="message" placeholder="Wiadomość"></textarea>
                         <input type="submit" value="WYŚLIJ">
                     </form>
                 </div>
@@ -252,6 +285,17 @@
 
     </footer>
 
+    <!--author section----------------------------------------------------->
+    <section class="author">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy;Projekt i realizacja M.Stabrawa mistaaqua@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--modal test------------------------------------------------------------------------------------------------------------>
 
@@ -260,22 +304,18 @@
             <div class="row">
                 <h2>Kontakt</h2>
                 <div class="col-md-6 col-md-offset-3">
-                    <h3><a href="tel:+48728314"><i class="fa fa-2x fa-phone" aria-hidden="true"></i> 728 314 652</a></h3>
-                    <form action="">
+                    <h3><a href="tel:+48728314652"><i class="fa fa-2x fa-phone" aria-hidden="true"></i> 728 314 652</a></h3>
 
-                        <input type="email" placeholder="email">
-                        <textarea placeholder="Wiadomość"></textarea>
-                        <input type="submit" value="WYŚLIJ">
-                    </form>
                 </div>
                 <button id="btnClose"><i class="fa fa-2x fa-times" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
 
+
     <!--scroll top button-------------------------------------------------------------------------------------->
     <button id="myBtnTop" title="Go to top">
-    <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 
     <script src="js/jquery-3.2.1.min.js"></script>
 

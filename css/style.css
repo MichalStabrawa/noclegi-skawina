@@ -25,6 +25,7 @@
             color: goldenrod;
             top: 0;
             border-color: transparent;
+            border-radius: 0px;
         }
         
         .navbar-default .navbar-nav>li>a {
@@ -155,6 +156,14 @@
             background: rgba(0, 0, 0, 0.9);
             opacity: 0;
             transition: 0.3s linear;
+        }
+        
+        .mask h4 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
         .mask:hover {
@@ -376,11 +385,9 @@
             background: rgba(0, 0, 0, 0.9);
             display: none;
         }
-
-
         
         #modal-test a {
-            color: goldenrod;
+            color: #fff;
             text-align: center;
         }
         
@@ -391,7 +398,7 @@
         #modal-test form textarea {
             height: 80px;
             overflow: hidden;
-            color:#fff;
+            color: #fff;
         }
         
         input[type="submit"]:hover {
@@ -513,4 +520,14 @@
         
         .maskMap a:hover {
             color: #fff;
+        }
+        
+        .author {
+            background-color: #161414;
+            font-size: 8px;
+        }
+        
+        .author p {
+            height: 25px;
+            line-height: 25px;
         }

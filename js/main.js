@@ -124,6 +124,36 @@ img.onclick = function(){
     captionText.innerHTML = this.alt;
 }
 
+/*modal 7*/
+var img = document.getElementById('myImg7');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+/*modal 8*/
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+/*modal 9*/
+var img = document.getElementById('myImg9');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
 
 /*scroll top button to section noclegi*/
 $('#btnScroll').on('click', function () {
